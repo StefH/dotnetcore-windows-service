@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsServiceExample", "Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceExample.Net472", "WindowsServiceExample.Net472\WindowsServiceExample.Net472.csproj", "{40E321A4-AB79-4C0E-A971-35A6C133C2E3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageReceiverAsAService.Lib", "MessageReceiverAsAService.Lib\MessageReceiverAsAService.Lib.csproj", "{B1D721A4-F041-4F3B-BF93-F2136B406DB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageReceiverAsAService", "MessageReceiverAsAService\MessageReceiverAsAService.csproj", "{81E5376B-D64C-4DAC-B669-B324070DF853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D721A4-F041-4F3B-BF93-F2136B406DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D721A4-F041-4F3B-BF93-F2136B406DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D721A4-F041-4F3B-BF93-F2136B406DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D721A4-F041-4F3B-BF93-F2136B406DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E5376B-D64C-4DAC-B669-B324070DF853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E5376B-D64C-4DAC-B669-B324070DF853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E5376B-D64C-4DAC-B669-B324070DF853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E5376B-D64C-4DAC-B669-B324070DF853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
