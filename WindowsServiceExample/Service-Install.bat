@@ -3,6 +3,6 @@ call Service-Uninstall.bat
 
 call Publish.bat
 
-SET targetpath=C:\Services\WindowsServiceExample\
+SET ServiceInstallPath=C:\Services\WindowsServiceExample\
 
-sc create WindowsServiceExample binPath= "%targetpath%WindowsServiceExample.exe"
+sc create WindowsServiceExample binPath= "%ServiceInstallPath%WindowsServiceExample.exe"

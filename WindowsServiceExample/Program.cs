@@ -34,7 +34,7 @@ namespace WindowsServiceExample
                     loggingBuilder.AddConsole();
                     var settings = new EventLogSettings
                     {
-                        SourceName = "MessageReceiverAsAService",
+                        SourceName = "WindowsServiceExample",
                         Filter = (source, level) => level >= LogLevel.Information
                     };
 

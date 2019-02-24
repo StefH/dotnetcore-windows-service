@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsServiceExample.Lib",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsServiceExample", "WindowsServiceExample\WindowsServiceExample.csproj", "{AB92DD7C-7221-411C-9385-18AD77C6C58C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceExample.Net472", "WindowsServiceExample.Net472\WindowsServiceExample.Net472.csproj", "{40E321A4-AB79-4C0E-A971-35A6C133C2E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AB92DD7C-7221-411C-9385-18AD77C6C58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB92DD7C-7221-411C-9385-18AD77C6C58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB92DD7C-7221-411C-9385-18AD77C6C58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E321A4-AB79-4C0E-A971-35A6C133C2E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
