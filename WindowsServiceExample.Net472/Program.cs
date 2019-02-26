@@ -33,6 +33,7 @@ namespace WindowsServiceExample.Net472
             {
                 loggingBuilder.AddConsole();
                 loggingBuilder.AddDebug();
+                loggingBuilder.AddLog4Net();
             });
 
             // Inject lib

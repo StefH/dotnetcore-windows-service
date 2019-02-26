@@ -32,6 +32,7 @@ namespace WindowsServiceExample
                 {
                     loggingBuilder.AddDebug();
                     loggingBuilder.AddConsole();
+                    loggingBuilder.AddLog4Net();
                     var settings = new EventLogSettings
                     {
                         SourceName = "WindowsServiceExample",
