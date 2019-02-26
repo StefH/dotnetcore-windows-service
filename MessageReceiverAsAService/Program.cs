@@ -1,5 +1,4 @@
-﻿using MessageReceiverAsAService.Lib.DependencyInjection;
-using MessageReceiverAsAService.Lib.Options;
+﻿using MessageReceiverAsAService.Lib.Options;
 using MessageReceiverAsAService.ServiceBase;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -40,7 +39,6 @@ namespace MessageReceiverAsAService
                         SourceName = "MessageReceiverAsAService",
                         Filter = (source, level) =>
                         {
-
                             return level >= LogLevel.Information;
                         }
                     };

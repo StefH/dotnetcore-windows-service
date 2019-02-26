@@ -1,10 +1,9 @@
 ﻿using JetBrains.Annotations;
 using MessageReceiverAsAService.Lib.Implementations;
 using MessageReceiverAsAService.Lib.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
 
 // ReSharper disable once CheckNamespace
-namespace MessageReceiverAsAService.Lib.DependencyInjection
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
@@ -12,6 +11,7 @@ namespace MessageReceiverAsAService.Lib.DependencyInjection
         {
             services.AddSingleton<IBinarySerializer, BinarySerializer>();
             services.AddSingleton<ISubscriptionClientFactory, SubscriptionClientFactory>();
+            services.AddSingleton<IQueueClientFactory, QueueClientFactory>();
             services.AddSingleton<IMessageHandlerService, MessageHandlerService>();
 
             return services;

@@ -5,22 +5,22 @@ using Microsoft.Extensions.Options;
 
 namespace MessageReceiverAsAService.Lib.Implementations
 {
-    public class SubscriptionClientFactory : ISubscriptionClientFactory
+    public class QueueClientFactory : IQueueClientFactory
     {
         private readonly ServiceBusSubscriptionOptions _options;
 
         private readonly ServiceBusConnection _connection;
 
-        public SubscriptionClientFactory(IOptions<ServiceBusSubscriptionOptions> options)
+        public QueueClientFactory(IOptions<ServiceBusSubscriptionOptions> options)
         {
             _options = options.Value;
 
             _connection = new ServiceBusConnection(_options.ConnectionString);
         }
 
-        public ISubscriptionClient Create()
+        public IQueueClient Create()
         {
-            return new SubscriptionClient(_connection, _options.TopicPath, _options.SubscriptionName, ReceiveMode.PeekLock, RetryPolicy.Default);
+            return new QueueClient(_connection, _options.QueueName, ReceiveMode.PeekLock, RetryPolicy.Default);
         }
     }
 }

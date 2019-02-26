@@ -4,6 +4,7 @@ namespace MessageReceiverAsAService.Lib.Options
 {
     public class ServiceBusSubscriptionOptions
     {
+        // [RegularExpression("^.*$")]
         [Required]
         public string ConnectionString { get; set; }
 
@@ -12,5 +13,8 @@ namespace MessageReceiverAsAService.Lib.Options
 
         [Required]
         public string SubscriptionName { get; set; }
+
+        [Required]
+        public string QueueName { get; set; }
     }
 }
