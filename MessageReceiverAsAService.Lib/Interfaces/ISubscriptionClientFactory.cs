@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.ServiceBus;
+﻿using System.Threading;
+using Microsoft.Azure.ServiceBus;
 
 namespace MessageReceiverAsAService.Lib.Interfaces
 {

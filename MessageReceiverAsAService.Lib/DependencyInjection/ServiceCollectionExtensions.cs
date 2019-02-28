@@ -1,4 +1,5 @@
 ﻿using JetBrains.Annotations;
+using MessageReceiverAsAService.Lib.Handlers;
 using MessageReceiverAsAService.Lib.Implementations;
 using MessageReceiverAsAService.Lib.Interfaces;
 
@@ -12,7 +13,10 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<IBinarySerializer, BinarySerializer>();
             services.AddSingleton<ISubscriptionClientFactory, SubscriptionClientFactory>();
             services.AddSingleton<IQueueClientFactory, QueueClientFactory>();
+            services.AddSingleton<ISessionClientFactory, SessionClientFactory>();
             services.AddSingleton<IMessageHandlerService, MessageHandlerService>();
+            services.AddSingleton<IQueueClientMessageHandler, QueueClientMessageHandler>();
+            services.AddSingleton<ISessionClientMessageHandler, SessionClientMessageHandler>();
 
             return services;
         }

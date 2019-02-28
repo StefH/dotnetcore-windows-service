@@ -16,5 +16,8 @@ namespace MessageReceiverAsAService.Lib.Options
 
         [Required]
         public string QueueName { get; set; }
+
+        [Required]
+        public string SessionQueueName { get; set; }
     }
 }
